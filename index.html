@@ -23,20 +23,21 @@
     .relay-card {
       display: inline-block;
       background-color: white;
-      padding: 20px;
-      margin: 15px;
+      padding: 5px;
+      margin: 5px;
       border-radius: 15px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      width: 220px;
+      width: 100px;
+      font-size: 0.8rem;
       vertical-align: top;
     }
     .relay-card h2 {
       margin-bottom: 10px;
-      font-size: 1.3rem;
+      font-size: 1.0rem;
     }
     .relay-card p {
       margin-bottom: 10px;
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
     .relay-card button {
       padding: 10px 20px;
@@ -45,14 +46,14 @@
       color: white;
       background-color: blue;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 13px;
 	  width: 90%;
       transition: opacity 0.3s ease;
     }
     .relay-card button:hover {
-      opacity: 0.8;
+      opacity: 0.6;
     }
-    #allOffBtn, #logoutBtn {
+    #allOnBtn, #allOffBtn, #logoutBtn {
       max-width: 300px;
       width: 90%;
       padding: 12px 25px;
@@ -64,6 +65,12 @@
       display: block;
       color: white;
       transition: opacity 0.3s ease;
+    }
+    #allOnBtn {
+      background-color: #1DB84C;
+    }
+    #allOnBtn:hover {
+      opacity: 0.8;
     }
     #allOffBtn {
       background-color: #d32f2f;
@@ -160,29 +167,208 @@
     <div class="relay-container">
       <div class="relay-card">
         <h2>Relay 1</h2>
+        <h>R2-UTAMA</h>
+        <br>(R_N4 = 01-25)</br>
         <p>Status: <span id="status1">Loading...</span></p>
         <button id="btn1">Switch</button>
       </div>
 
       <div class="relay-card">
         <h2>Relay 2</h2>
+        <h>R2-BASE-1</h>
+        <br>(R_N4 = 01-10)</br>
         <p>Status: <span id="status2">Loading...</span></p>
         <button id="btn2">Switch</button>
       </div>
 
       <div class="relay-card">
         <h2>Relay 3</h2>
+        <h>R2-BASE-2</h>
+        <br>(R_N4 = 11-20)</br>
         <p>Status: <span id="status3">Loading...</span></p>
         <button id="btn3">Switch</button>
       </div>
 
       <div class="relay-card">
         <h2>Relay 4</h2>
+        <h>R2-BASE-3</h>
+        <br>(R_N4 = 21-25)</br>
         <p>Status: <span id="status4">Loading...</span></p>
         <button id="btn4">Switch</button>
       </div>
     </div>
+    
+    <div class="relay-container">
+      <div class="relay-card">
+        <h2>Relay 5</h2>
+        <h>R3-UTAMA</h>
+        <br>(R_4P = 01-25)</br>
+        <p>Status: <span id="status5">Loading...</span></p>
+        <button id="btn5">Switch</button>
+      </div>
 
+      <div class="relay-card">
+        <h2>Relay 6</h2>
+        <h>R3-BASE-1</h>
+        <br>(R_4P = 01-10)</br>
+        <p>Status: <span id="status6">Loading...</span></p>
+        <button id="btn6">Switch</button>
+      </div>
+
+      <div class="relay-card">
+        <h2>Relay 7</h2>
+        <h>R3-BASE-2</h>
+        <br>(R_4P = 11-20)</br>
+        <p>Status: <span id="status7">Loading...</span></p>
+        <button id="btn7">Switch</button>
+      </div>
+
+      <div class="relay-card">
+        <h2>Relay 8</h2>
+        <h>R3-BASE-3</h>
+        <br>(R_4P = 21-25)</br>
+        <p>Status: <span id="status8">Loading...</span></p>
+        <button id="btn8">Switch</button>
+      </div>
+    </div>
+    
+    <div class="relay-container">
+      <div class="relay-card">
+        <h2>Relay 9</h2>
+        <h>R4-UTAMA</h>
+        <br>(R_N4 = 26-50)</br>
+        <p>Status: <span id="status9">Loading...</span></p>
+        <button id="btn9">Switch</button>
+      </div>
+
+      <div class="relay-card">
+        <h2>Relay 10</h2>
+        <h>R4-BASE-1</h>
+        <br>(R_N4 = 26-35)</br>
+        <p>Status: <span id="status10">Loading...</span></p>
+        <button id="btn10">Switch</button>
+      </div>
+
+      <div class="relay-card">
+        <h2>Relay 11</h2>
+        <h>R4-BASE-2</h>
+        <br>(R_N4 = 36-45)</br>
+        <p>Status: <span id="status11">Loading...</span></p>
+        <button id="btn11">Switch</button>
+      </div>
+
+      <div class="relay-card">
+        <h2>Relay 12</h2>
+        <h>R4-BASE-3</h>
+        <br>(R_N4 = 46-50)</br>
+        <p>Status: <span id="status12">Loading...</span></p>
+        <button id="btn12">Switch</button>
+      </div>
+    </div>
+    
+    <div class="relay-container">
+      <div class="relay-card">
+        <h2>Relay 13</h2>
+        <h>R5-UTAMA</h>
+        <br>(R_4P = 26-50)</br>
+        <p>Status: <span id="status13">Loading...</span></p>
+        <button id="btn13">Switch</button>
+      </div>
+
+      <div class="relay-card">
+        <h2>Relay 14</h2>
+        <h>R5-BASE-1</h>
+        <br>(R_4P = 26-35)</br>
+        <p>Status: <span id="status14">Loading...</span></p>
+        <button id="btn14">Switch</button>
+      </div>
+
+      <div class="relay-card">
+        <h2>Relay 15</h2>
+        <h>R5-BASE-2</h>
+        <br>(R_4P = 36-45)</br>
+        <p>Status: <span id="status15">Loading...</span></p>
+        <button id="btn15">Switch</button>
+      </div>
+
+      <div class="relay-card">
+        <h2>Relay 16</h2>
+        <h>R5-BASE-3</h>
+        <br>(R_4P = 46-50)</br>
+        <p>Status: <span id="status16">Loading...</span></p>
+        <button id="btn16">Switch</button>
+      </div>
+    </div>
+    
+    <div class="relay-container">
+      <div class="relay-card">
+        <h2>Relay 17</h2>
+        <h>R6-UTAMA</h>
+        <br>(R_N4 = 51-75)</br>
+        <p>Status: <span id="status17">Loading...</span></p>
+        <button id="btn17">Switch</button>
+      </div>
+
+      <div class="relay-card">
+        <h2>Relay 18</h2>
+        <h>R6-BASE-1</h>
+        <br>(R_N4 = 51-60)</br>
+        <p>Status: <span id="status18">Loading...</span></p>
+        <button id="btn18">Switch</button>
+      </div>
+
+      <div class="relay-card">
+        <h2>Relay 19</h2>
+        <h>R6-BASE-2</h>
+        <br>(R_N4 = 61-70)</br>
+        <p>Status: <span id="status19">Loading...</span></p>
+        <button id="btn19">Switch</button>
+      </div>
+
+      <div class="relay-card">
+        <h2>Relay 20</h2>
+        <h>R6-BASE-3</h>
+        <br>(R_N4 = 71-75)</br>
+        <p>Status: <span id="status20">Loading...</span></p>
+        <button id="btn20">Switch</button>
+      </div>
+    </div>
+    
+    <div class="relay-container">
+      <div class="relay-card">
+        <h2>Relay 21</h2>
+        <h>R7-UTAMA</h>
+        <br>(R_4P = 51-75)</br>
+        <p>Status: <span id="status21">Loading...</span></p>
+        <button id="btn21">Switch</button>
+      </div>
+
+      <div class="relay-card">
+        <h2>Relay 22</h2>
+        <h>R7-BASE-1</h>
+        <br>(R_4P = 51-60)</br>
+        <p>Status: <span id="status22">Loading...</span></p>
+        <button id="btn22">Switch</button>
+      </div>
+
+      <div class="relay-card">
+        <h2>Relay 23</h2>
+        <h>R7-BASE-2</h>
+        <br>(R_4P = 61-70)</br>
+        <p>Status: <span id="status23">Loading...</span></p>
+        <button id="btn23">Switch</button>
+      </div>
+
+      <div class="relay-card">
+        <h2>Relay 24</h2>
+        <h>R7-BASE-3</h>
+        <br>(R_4P = 71-75)</br>
+        <p>Status: <span id="status24">Loading...</span></p>
+        <button id="btn24">Switch</button>
+      </div>
+    </div>
+
+    <button id="allOnBtn">All ON</button>
     <button id="allOffBtn">All OFF</button>
     <button id="logoutBtn">KELUAR</button>
   </div>
@@ -253,6 +439,26 @@
         { id: 2, path: "relay2" },
         { id: 3, path: "relay3" },
         { id: 4, path: "relay4" },
+        { id: 5, path: "relay5" },
+        { id: 6, path: "relay6" },
+        { id: 7, path: "relay7" },
+        { id: 8, path: "relay8" },
+        { id: 9, path: "relay9" },
+        { id: 10, path: "relay10" },
+        { id: 11, path: "relay11" },
+        { id: 12, path: "relay12" },
+        { id: 13, path: "relay13" },
+        { id: 14, path: "relay14" },
+        { id: 15, path: "relay15" },
+        { id: 16, path: "relay16" },
+        { id: 17, path: "relay17" },
+        { id: 18, path: "relay18" },
+        { id: 19, path: "relay19" },
+        { id: 20, path: "relay20" },
+        { id: 21, path: "relay21" },
+        { id: 22, path: "relay22" },
+        { id: 23, path: "relay23" },
+        { id: 24, path: "relay24" },
       ];
 
       relays.forEach(relay => {
@@ -272,6 +478,12 @@
           });
         };
       });
+
+      document.getElementById("allOnBtn").onclick = () => {
+        relays.forEach(relay => {
+          db.ref("/" + relay.path).set(true);
+        });
+      };
 
       document.getElementById("allOffBtn").onclick = () => {
         relays.forEach(relay => {
@@ -294,7 +506,4 @@
     };
   </script>
 </body>
-
 </html>
-
-
