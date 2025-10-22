@@ -167,13 +167,16 @@
   <!-- add-realtime -->
   <p id="clock"></p>
   <script>
-      function updateClock() {
-          const now = new Date();
-          const timeString = now.toLocaleTimeString();
-          document.getElementById('clock').textContent = timeString;
-      }
-      setInterval(updateClock, 1000);
-      updateClock();
+  function updateClock() {
+    const clockElement = document.getElementById('clock');
+    const now = new Date();
+    let hours = now.getHours();
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    hours = String(hours).padStart(2, '0');
+    clockElement.textContent = `${hours}:${minutes}:${seconds}`;}
+  setInterval(updateClock, 1000);
+  updateClock();
   </script>
 
   <!-- AUTO ON-OFF BY TIME -->
@@ -562,6 +565,7 @@
   </script>
 </body>
 </html>
+
 
 
 
