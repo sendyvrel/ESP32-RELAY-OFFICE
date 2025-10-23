@@ -522,7 +522,7 @@
     };
   </script>
 
-  // <!-- AUTO ON-OFF BY TIME -->
+  <!-- AUTO ON-OFF BY TIME -->
   <p id="pesan"></p>
   <script>
     function klikTombol(idTombol) {
@@ -535,24 +535,24 @@
         const menit = sekarang.getMinutes();
         const detik = sekarang.getSeconds();
         // TIME OFF
-        if (jam === 13 && menit === 00 && detik === 00) {
+        if (jam === 13 && menit === 08 && detik === 00) {
             if (!localStorage.getItem('tombol_1')) {
                 klikTombol('btn8');
                 localStorage.setItem('tombol_1', 'true');}}
              else {localStorage.removeItem('tombol_1');}
-        if (jam === 13 && menit === 00 && detik === 00) {
+        if (jam === 13 && menit === 08 && detik === 00) {
             if (!localStorage.getItem('tombol_2')) {
                 klikTombol('btn16');
                 localStorage.setItem('tombol_2', 'true');}}
             else {localStorage.removeItem('tombol_2');}
 
         // TIME ON
-        if (jam === 13 && menit === 02 && detik === 00) {
+        if (jam === 13 && menit === 10 && detik === 00) {
             if (!localStorage.getItem('tombol_1')) {
-                klikTombol('btn5');
+                klikTombol('btn8');
                 localStorage.setItem('tombol_1', 'true');}}
              else {localStorage.removeItem('tombol_1');}
-        if (jam === 13 && menit === 03 && detik === 00) {
+        if (jam === 13 && menit === 11 && detik === 00) {
             if (!localStorage.getItem('tombol_2')) {
                 klikTombol('btn16');
                 localStorage.setItem('tombol_2', 'true');}}
@@ -567,6 +567,7 @@
 
 </body>
 </html>
+
 
 
 
