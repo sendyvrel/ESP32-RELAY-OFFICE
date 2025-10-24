@@ -10,12 +10,12 @@
         const menit = sekarang.getMinutes();
         const detik = sekarang.getSeconds();
         // TIME OFF
-        if (jam === 12 && menit === 20 && detik === 00) {
+        if (jam === 12 && menit === 25 && detik === 00) {
             if (!localStorage.getItem('tombol_1')) {
                 klikTombol('btn8');
                 localStorage.setItem('tombol_1', 'true');}}
              else {localStorage.removeItem('tombol_1');}
-        if (jam === 12 && menit === 20 && detik === 00) {
+        if (jam === 12 && menit === 25 && detik === 00) {
             if (!localStorage.getItem('tombol_2')) {
                 klikTombol('btn16');
                 localStorage.setItem('tombol_2', 'true');}}
