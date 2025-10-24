@@ -10,24 +10,24 @@
         const menit = sekarang.getMinutes();
         const detik = sekarang.getSeconds();
         // TIME OFF
-        if (jam === 11 && menit === 45 && detik === 00) {
+        if (jam === 12 && menit === 00 && detik === 00) {
             if (!localStorage.getItem('tombol_1')) {
                 klikTombol('btn8');
                 localStorage.setItem('tombol_1', 'true');}}
              else {localStorage.removeItem('tombol_1');}
-        if (jam === 11 && menit === 45 && detik === 00) {
+        if (jam === 12 && menit === 00 && detik === 00) {
             if (!localStorage.getItem('tombol_2')) {
                 klikTombol('btn16');
                 localStorage.setItem('tombol_2', 'true');}}
             else {localStorage.removeItem('tombol_2');}
 
         // TIME ON
-        if (jam === 11 && menit === 46 && detik === 00) {
+        if (jam === 12 && menit === 01 && detik === 00) {
             if (!localStorage.getItem('tombol_1')) {
                 klikTombol('btn8');
                 localStorage.setItem('tombol_1', 'true');}}
              else {localStorage.removeItem('tombol_1');}
-        if (jam === 11 && menit === 46 && detik === 10) {
+        if (jam === 12 && menit === 00 && detik === 10) {
             if (!localStorage.getItem('tombol_2')) {
                 klikTombol('btn16');
                 localStorage.setItem('tombol_2', 'true');}}
