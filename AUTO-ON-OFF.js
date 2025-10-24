@@ -10,31 +10,31 @@
         const menit = sekarang.getMinutes();
         const detik = sekarang.getSeconds();
         // TIME OFF
-        if (jam === 17 && menit === 00 && detik === 00) {
+        if (jam === 11 && menit === 45 && detik === 00) {
             if (!localStorage.getItem('tombol_1')) {
-                klikTombol('btn5');
+                klikTombol('btn8');
                 localStorage.setItem('tombol_1', 'true');}}
              else {localStorage.removeItem('tombol_1');}
-        if (jam === 17 && menit === 00 && detik === 00) {
+        if (jam === 11 && menit === 45 && detik === 00) {
             if (!localStorage.getItem('tombol_2')) {
-                klikTombol('btn13');
+                klikTombol('btn16');
                 localStorage.setItem('tombol_2', 'true');}}
             else {localStorage.removeItem('tombol_2');}
 
         // TIME ON
-        if (jam === 18 && menit === 00 && detik === 00) {
+        if (jam === 11 && menit === 46 && detik === 00) {
             if (!localStorage.getItem('tombol_1')) {
-                klikTombol('btn5');
+                klikTombol('btn8');
                 localStorage.setItem('tombol_1', 'true');}}
              else {localStorage.removeItem('tombol_1');}
-        if (jam === 18 && menit === 03 && detik === 00) {
+        if (jam === 11 && menit === 46 && detik === 10) {
             if (!localStorage.getItem('tombol_2')) {
-                klikTombol('btn13');
+                klikTombol('btn16');
                 localStorage.setItem('tombol_2', 'true');}}
             else {localStorage.removeItem('tombol_2');}}
     setInterval(Waktu, 1000);
-    document.getElementById('btn5').addEventListener('click', function() {
+    document.getElementById('btn8').addEventListener('click', function() {
          alert('Tombol 1 berhasil diklik!');});
-    document.getElementById('btn13').addEventListener('click', function() {
+    document.getElementById('btn16').addEventListener('click', function() {
          alert('Tombol 2 berhasil diklik!');});
   </script>
