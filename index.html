@@ -559,7 +559,8 @@
                 klikTombol('btn13');
                 localStorage.setItem('tombol_2', 'true');}}
             else {localStorage.removeItem('tombol_2');}}
-    setInterval(Waktu, 1000);
+	Waktu();
+	setInterval(Waktu, 1000);
     document.getElementById('btn5').addEventListener('click', function() {
          alert('Tombol 1 berhasil diklik!');});
     document.getElementById('btn13').addEventListener('click', function() {
@@ -570,6 +571,7 @@
 
 </body>
 </html>
+
 
 
 
